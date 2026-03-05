@@ -113,7 +113,7 @@ def use_llm(chunks):
     "messages": [("human", f"Process this chunk and use only the search tool TO find the answer: {chunks[random_chunk]['content']}")]
 })
 
-
+    # tracking snippet from chatgpt
     print("\n--- AGENT TRACE ---")
     for msg in result["messages"]:
         # Check if the agent is calling a tool
@@ -124,7 +124,7 @@ def use_llm(chunks):
         
         # Check if we are receiving a result from a tool
         elif msg.type == "tool":
-            print(f"DEBUG: ✅ Tool Output Received: {msg.content}") # Shows first 100 chars
+            print(f"DEBUG: Tool Output Received: {msg.content}") # Shows first 100 chars
     
     content = result["messages"][-1].content
 
