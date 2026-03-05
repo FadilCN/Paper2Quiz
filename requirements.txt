@@ -1,0 +1,7 @@
+langchain==1.2.10
+langchain_community==0.4.1
+langchain_google_genai==4.2.1
+langchain_ollama==1.0.1
+langchain_text_splitters==1.1.1
+pydantic==2.12.5
+streamlit==1.47.1
