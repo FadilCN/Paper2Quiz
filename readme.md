@@ -6,12 +6,14 @@
 
 
 ![paper2quiz overview](images/1.jpg)
-![agent workflow](images/2.jpg)
-
 
 ## What it does
 
 paper2quiz reads through your PDF, finds questions and their answers, and outputs clean structured JSON ready to use in any quiz app. If an answer isn't explicitly written in the document, the agent searches the web to find it automatically.
+
+![agent workflow](images/2.jpg)
+
+
 
 ---
 
