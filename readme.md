@@ -5,8 +5,8 @@
 **paper2quiz** uses a LangChain AI agent to extract multiple-choice questions directly from your PDF files. Upload a paper, get a quiz. No manual work needed.
 
 
-![paper2quiz overview](image/1.jpg)
-![agent workflow](image/2.jpg)
+![paper2quiz overview](images/1.jpg)
+![agent workflow](images/2.jpg)
 
 
 ## What it does
