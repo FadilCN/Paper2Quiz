@@ -59,6 +59,12 @@ The PDF path is set to `4.pdf` inside `get_chunks()`. A file upload interface or
 **Model may return invalid JSON**
 The LLM occasionally produces malformed JSON. The code catches parse errors and returns a `no_answer` fallback object, but the question is lost in that case. Retry logic or output validation is not yet in place.
 
+**May occationally return wrong aswers**
+There are instances where it might provide wrong answer from internet
+
+**User interaction is slow and buggy**
+The experience can feel unresponsive, especially when the agent is waiting on the web search tool.
+
 **Questions can be slow to load**
 Depending on your machine and model size, each question extraction can take several seconds. There is no progress indicator or streaming output yet.
 
