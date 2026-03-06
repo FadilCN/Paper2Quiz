@@ -4,7 +4,6 @@
 
 **paper2quiz** uses a LangChain AI agent to extract multiple-choice questions directly from your PDF files. Upload a paper, get a quiz. No manual work needed.
 
-
 ![paper2quiz overview](images/1.jpg)
 
 ## What it does
@@ -13,7 +12,7 @@ paper2quiz reads through your PDF, finds questions and their answers, and output
 
 ![agent workflow](images/2.jpg)
 
-
+![streamlit](images/3.jpg)
 
 ---
 
@@ -22,7 +21,7 @@ paper2quiz reads through your PDF, finds questions and their answers, and output
 ### Install dependencies
 
 ```bash
-pip install langchain langchain-community langchain-ollama langchain-google-genai langchain-text-splitters pypdf duckduckgo-search pydantic
+pip install langchain langchain-community langchain-ollama langchain-google-genai langchain-text-splitters pypdf duckduckgo-search pydantic streamlit
 ```
 
 ### Install and run Ollama
@@ -34,12 +33,18 @@ ollama pull llama3.2:3b
 ollama serve
 ```
 
-### Run
+### Run the UI
+
+```bash
+streamlit run ui.py
+```
+
+### Run without UI
 
 ```python
-from your_module import get_chunks, use_llm
+from llm import get_chunks, use_llm
 
-chunks = get_chunks("your_file.pdf")   # Pass any PDF file
+chunks = get_chunks("your_file.pdf")
 result = use_llm(chunks)
 print(result)
 ```
